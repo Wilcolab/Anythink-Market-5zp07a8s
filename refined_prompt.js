@@ -29,38 +29,3 @@ function toCamelCase(input) {
         .join('');
 }
 
-// Example usage and validation
-try {
-    console.log(toCamelCase("hello world")); // "helloWorld"
-    console.log(toCamelCase(" convert-this_string ")); // "convertThisString"
-    console.log(toCamelCase("multiple   separators---here__now")); // "multipleSeparatorsHereNow"
-    console.log(toCamelCase("AlreadyCamelCase")); // "alreadycamelcase"
-    // Edge cases
-    toCamelCase(""); // Throws error
-} catch (e) {
-    console.error(e.message);
-}
-
-try {
-    toCamelCase(123); // Throws error
-} catch (e) {
-    console.error(e.message);
-}
-
-try {
-    toCamelCase(null); // Throws error
-} catch (e) {
-    console.error(e.message);
-}
-
-try {
-    toCamelCase([]); // Throws error
-} catch (e) {
-    console.error(e.message);
-}
-
-try {
-    toCamelCase({}); // Throws error
-} catch (e) {
-    console.error(e.message);
-}

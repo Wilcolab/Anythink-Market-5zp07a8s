@@ -1,4 +1,7 @@
 function toCamelCase(str) {
+    if (typeof str !== 'string' || str.length === 0) {
+        return '';
+    }
     return str
         .toLowerCase()
         .replace(/[_\-\s]+(.)?/g, (_, chr) => chr ? chr.toUpperCase() : '')
